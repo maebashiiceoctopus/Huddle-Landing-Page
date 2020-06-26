@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+h1 {
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400 bolder;
+    color: hsl(192, 100%, 9%);
+
+
+}
+
+.gris {
+    color: #A0A4A7;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400 bolder;
+    color: hsl(192, 100%, 9%);
+
+}
+
+.parrafos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.blanco {
+    color: #FFFFFF;
+}
+
+.azul {
+    color: hsl(192, 100%, 9%);
+
+}
+
+.gris {
+    color: #A0A4A7;
+}
+
+
+body {
+    background: white;
+    max-width: 1440px;
+
+
+}
+
+/* CABECERA PRINCIPAL DE LA PAGINA*/
+.contenedor1 {
+    background-image: url("../img/bg-hero-desktop.svg");
+    background-color: #EDFBFE;
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+/* ESTILOS HEADER */
+#logo {
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    float: left;
+}
+
+.botongris {
+    float: right;
+    margin-top: 5%;
+    margin-right: 3%;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    padding: 10px;
+    width: 15%;
+    height: 48px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 4px #c5c7c7;
+    cursor: pointer;
+
+
+}
+
+.botongris:hover {
+    box-shadow: 0px 0px 5px #bdc0c0 inset;
+
+
+}
+
+.boton-rosa {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+    font-weight: 600;
+    width: 50%;
+    height: 48px;
+    border-radius: 30px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 4px hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+
+.boton-rosa:hover {
+    box-shadow: 0px 0px 8px hsl(322, 63%, 54%) inset;
+}
+
+
+.texto-mockup {
+
+    width: 36%;
+    margin-left: 5%;
+    float: left;
+    padding-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.texto-mockup p {
+    padding-top: 10%;
+}
+
+#img-mockup {
+    width: 55%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+/* FIN CABECERA PRINCIPAL DE LA PAGINA*/
+
+/* INICIO  SECCION CARD DE LA PAGINA*/
+
+.cajas-desc {
+    width: 87%;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px #c5c7c7;
+    border: none;
+}
+
+.info {
+    height: 160px;
+    width: 550px;
+    font-size: 16px;
+
+}
+
+.info h2 {
+    padding-bottom: 5%;
+}
+
+.caja-izq {
+    float: left;
+    padding-top: 135px;
+    padding-left: 100px;
+
+}
+
+.caja-dere {
+    float: right;
+    font-size: 16px;
+    padding-top: 160px;
+    padding-left: 80px;
+    padding-right: 10px;
+}
+
+.img-izq {
+    display: block;
+    float: left;
+    margin-left: 7%;
+}
+
+.img-der {
+    display: block;
+    float: right;
+    margin-right: 10%;
+
+
+}
+
+.img-desc {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-right: 35px;
+}
+
+.comunidad {
+    width: 40%;
+    height: 400px;
+    font-size: 16px;
+    height: 200px;
+    margin-left: 28%;
+    margin-top: 8%;
+    padding-top: 35px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 1px 0px 9px #c5c7c7;
+    border: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.comunidad .boton-rosa {
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: #00252E;
+    height: 500px;
+    margin-top: 20%;
+}
+
+
+.contenedor1-footer p {
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.contenedor1-footer i {
+    display: block;
+    width: 10px;
+    position: absolute;
+    padding-top: 3px;
+}
+
+.contenedor1-footer img {
+    padding-bottom: 5%;
+}
+
+.contenedor1-footer {
+    width: 30%;
+    padding-top: 200px;
+    margin-left: 5%;
+}
+
