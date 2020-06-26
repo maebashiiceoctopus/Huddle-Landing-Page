@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 18px;
+    max-width: 1440px;
+
+}
+
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -51,7 +57,7 @@ h2 {
 
 body {
     background: white;
-    max-width: 1440px;
+
 
 
 }
@@ -135,7 +141,8 @@ body {
     padding-top: 10%;
 }
 
-#img-mockup {
+.contenedorimagen img {
+
     width: 55%;
     padding-left: 10%;
     padding-bottom: 10%;
@@ -145,62 +152,51 @@ body {
 
 /* INICIO  SECCION CARD DE LA PAGINA*/
 
+
+
+
 .cajas-desc {
-    width: 87%;
+    max-width: 80%;
     height: 400px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 90px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 9px #c5c7c7;
-    border: none;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(192, 185, 185);
+    margin-bottom: 5%;
 }
 
-.info {
-    height: 160px;
-    width: 550px;
-    font-size: 16px;
-
+.caja{
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 3%;
+    width: 49%;
+   
 }
 
-.info h2 {
-    padding-bottom: 5%;
-}
 
-.caja-izq {
-    float: left;
-    padding-top: 135px;
-    padding-left: 100px;
 
-}
 
-.caja-dere {
-    float: right;
-    font-size: 16px;
-    padding-top: 160px;
-    padding-left: 80px;
-    padding-right: 10px;
-}
-
-.img-izq {
-    display: block;
-    float: left;
-    margin-left: 7%;
-}
-
-.img-der {
-    display: block;
-    float: right;
-    margin-right: 10%;
-
+.caja-img {
+    width: 46%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5;
 
 }
 
-.img-desc {
-    width: 80%;
+.responsive {
+    width: 100%;
     max-width: 400px;
-    margin-top: 30px;
-    margin-right: 35px;
+    height: auto;
+    float: right;
+}
+
+.flotarderecha {
+    float: right;
+}
+
+.flotarzquierda {
+    float: left;
 }
 
 .comunidad {
@@ -253,4 +249,3 @@ footer {
     padding-top: 200px;
     margin-left: 5%;
 }
-
