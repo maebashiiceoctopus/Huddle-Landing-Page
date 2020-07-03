@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1440px;
+    font-size: 1.125rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*estilos generales*/
+:root {
+    --font-titulos: 'Open Sans', sans-serif;
+    --font-texto: 'Poppins', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-reg-tex: 600 bolder;
+    --color-btn: hsl(322, 100%, 66%);
+    --color-oscuro: hsl(192, 100%, 9%);
+    --color-claro: #FFFF;
+    --color-fondo: hsl(193, 100%, 96%);
+    --color-medio: hsl(208, 11%, 55%);
+    --fs-h1: 1.125rem;
+    --fs-h2: 1.125rem;
+    --fz-p: .9rem;
+
+    --box-sh-1: 0px 0px 5px #bdc0c0;
+
+}
+
+body {
+    background-image: url('../img/bg-hero-desktop.svg');
+    background-color: var(--color-fondo);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.botongris {
+
+    font-family: var(--font-titulos);
+    font-weight: var(--fw-bold);
+    width: 15%;
+    height: 48px;
+    background: var(--color-claro);
+    border-radius: 30px;
+    border: none;
+    box-shadow: var(--box-sh-1);
+    cursor: pointer;
+    color: var(--color-oscuro);
+}
+
+.boton-rosa {
+    font-family: var(--font-titulos);
+    font-weight: var(--fw-bold);
+    width: 45%;
+    height: 48px;
+    border-radius: 30px;
+    color: var(--color-claro);
+    background: var(--color-btn);
+    border: none;
+    margin-top: 2em;
+    cursor: pointer;
+
+
+}
+
+
+/* FIN ESTILOS GENERALES*/
+
+/* INICIO ESTILOS MOCKUP*/
+.contenedor-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3.5em;
+    padding-right: 3em;
+    padding-left: 3em;
+
+
+}
+
+.mockup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font-titulos);
+    margin-top: 8em;
+    margin-bottom: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.texto-mockup {
+    width: 60%;
+}
+
+.mockup .texto-mockup h1 {
+    color: var(--color-oscuro);
+    padding-top: 3em;
+
+
+}
+
+.mockup p {
+    padding-top: 3em;
+    padding-right: 1em;
+
+    color: var(--color-oscuro);
+
+}
+
+.mockup img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*INICIO ESTILOS CAJAS*/
+
+.contenedor-cajas {
+    background: var(--color-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    vertical-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 1.125em;
+    box-shadow: var(--box-sh-1);
+
+}
+
+.texto-cajas {
+    margin: 2.5em;
+    margin-top: 4em;
+    padding: 2em;
+    width: 47%;
+    line-height: 20px;
+}
+
+.texto-cajas h2 {
+
+    font-size: var(--fs-h2);
+    font-family: var(--font-texto);
+    color: var(--color-oscuro);
+    padding-bottom: 1em;
+}
+
+.texto-cajas p {
+    font-size: var(--fz-p);
+    font-family: var(--font-titulos);
+    color: var(--color-medio);
+    line-height: 20px;
+
+
+}
+
+.caja-img img {
+    width: 90%;
+    max-width: 370px;
+    height: auto;
+    margin-left: 13em;
+    padding: 2em;
+
+}
+
+
+
+
+
+
+
+/* MEDIA QUERYS RESPONSIVE*/
+
+@media screen and (max-width:700px) {
+    :root {
+
+        --fs-h1: 1.125rem;
+        --fs-h2: 1.125rem;
+        --fz-p: .9rem;
+
+    }
+
+    .botongris {
+
+        width: 25%;
+        height: 40px;
+
+    }
+
+    .boton-rosa {
+
+        margin-top: 2em;
+        margin-bottom: 4em;
+
+    }
+
+    .contenedor-logo {
+
+
+        margin-top: 3.5em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+
+    }
+
+    .mockup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+    }
+
+    .texto-mockup {
+        width: 100%;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .mockup .texto-mockup h1 {
+        padding-top: 1em;
+
+
+    }
+
+    .mockup p {
+        padding-top: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        color: var(--color-oscuro);
+
+    }
+
+    .mockup img {
+        width: 90%;
+        height: auto;
+    }
+
+
+
+    .caja {
+
+        flex-flow: row wrap-reverse;
+        border-radius: 30px;
+        width: 80%;
+    }
+
+    .texto-cajas {
+        padding-top: 1em;
+        text-align: center;
+        width: 80%;
+        padding: 0;
+        margin: 1em;
+        margin-left: 3em;
+        padding: 2em;
+        line-height: 20px;
+
+
+    }
+
+
+
+
+
+    .caja-img img {
+        outline: 2px solid blueviolet;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 4em;
+        margin-left: 3em;
+        margin-right: 3.5em;
+
+
+    }
+}
