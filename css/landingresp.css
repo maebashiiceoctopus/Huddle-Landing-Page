@@ -276,6 +276,7 @@ body {
 
     }
 
+<<<<<<< Updated upstream
 
 
 
@@ -290,5 +291,19 @@ body {
         margin-right: 3.5em;
 
 
+=======
+  
+    .contenedor-cajas img {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+       margin-left: 1.5em;
+       margin-right: 1.5em;
+       margin-top: 1em;
+        
+        
+        
+    
+>>>>>>> Stashed changes
     }
 }
