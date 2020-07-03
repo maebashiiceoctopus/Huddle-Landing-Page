@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/fontawesome-free-5.13.1-web/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/landingresp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huddle Landing Page</title>
 </head>
@@ -12,14 +12,16 @@
 <body>
 
 
-    <div class="contenedor1">
-        <header>
+    <div class="contenedor">
+        <div class="contenedor-logo">
+            <div class="logo">
+                <img id="logo" src="img/logo.svg" alt="Huddle-logo">
+            </div>
 
 
-            <img id="logo" src="img/logo.svg" alt="Huddle-logo">
-            <button class="botongris">Try it for free</button>
+            <button class="botongris">Try it free</button>
 
-        </header>
+        </div>
         <div class="clearfix"></div>
 
         <div class="mockup">
@@ -39,26 +41,30 @@
 
             </div>
 
-        </div>
-    </div>
-    <!--fin cajas iniciales-->
-
-    <!--INICIO CAJAS INFORMACION-->
-
-    <div class="cajas-desc">
-        <div class="caja flotarzquierda">
-            <h2> Grow Together</h2>
-            <p class="parrafos gris">Generate meaningful discussions with your audience and build a strong, loyal
-                community.
-                think of the insightful conversations you miss out with a feedback form.</p>
-        </div>
-        <div class="caja-img flotarderecha">
-            <img class="responsive " src="img/illustration-grow-together.svg" alt="grow-together">
 
         </div>
 
-    </div>
+        <!--fin cajas iniciales-->
 
+
+
+        <div class="contenedor-cajas">
+            <div class="caja">
+                <div class="texto-cajas">
+                <h2> Grow Together</h2>
+                <p class="parrafos">Generate meaningful discussions with your audience and build a strong, loyal
+                    community.
+                    think of the insightful conversations you miss out with a feedback form.</p>
+                </div>
+                    <div class="caja-img">
+                    <img  src="img/illustration-grow-together.svg" alt="grow-together">
+
+                </div>
+
+            </div>
+
+        </div>
+        <!---
 
     <div class="cajas-desc">
         <div class="caja flotarderecha">
@@ -121,10 +127,9 @@
 
         </div>
 
-
     </footer>
    
-
+--->
 
 
 </body>
