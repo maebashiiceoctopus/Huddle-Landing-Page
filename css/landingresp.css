@@ -271,7 +271,7 @@ body {
 footer {
     width: 100%;
     background-color: #00252E;
-    height: 500px;
+   
     margin-top: 20%;
 }
 .contenedor-links-footer a{
@@ -300,8 +300,6 @@ footer {
 
 
 
-
-
 /* MEDIA QUERYS RESPONSIVE*/
 
 @media screen and (max-width:800px) {
@@ -326,11 +324,15 @@ footer {
         margin-bottom: 4em;
 
     }
-
+    .contenedor{
+        background-image: url('../img/bg-hero-desktop.svg');
+        background-color: var(--color-fondo);
+    }
+    
     .contenedor-logo {
 
 
-        margin-top: 3.5em;
+       
         padding-right: 1.5em;
         padding-left: 1.5em;
 
@@ -391,6 +393,38 @@ footer {
         width: 90%;
         line-height: 20px;
     }
+
+    
+.comunidad {
+    width:100%;
+
+  
+}
+
+
+.contenedor-links-footer a{
+    text-decoration: none;
+    
+    color: var(--color-claro);
+    font-family: var(--font-titulos);
+}
+.contenedor-links-footer li{
+    list-style: none;
+}
+
+.contenedor-logo-footer img{
+    padding-top: 8em;
+    padding-left: 3em;
+}
+.contenedor-links-footer{
+    padding-top: 3em;
+    padding-left: 3em;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3em;
+
+}
 
 
 
