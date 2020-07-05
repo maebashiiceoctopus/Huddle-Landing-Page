@@ -7,6 +7,9 @@
 html {
     max-width: 1440px;
     font-size: 1.125rem;
+
+    scroll-behavior: smooth;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
@@ -33,9 +36,8 @@ html {
 }
 
 body {
-    background-image: url('../img/bg-hero-desktop.svg');
-    background-color: var(--color-fondo);
-    background-size: cover;
+   background-color: var(--color-claro);
+
     height: 100%;
     width: 100%;
 
@@ -74,12 +76,17 @@ body {
 /* FIN ESTILOS GENERALES*/
 
 /* INICIO ESTILOS MOCKUP*/
+.contenedor{
+    background-image: url('../img/bg-hero-desktop.svg');
+    background-color: var(--color-fondo);
+}
 .contenedor-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 3.5em;
+    padding-top: 3em;
+   
     padding-right: 3em;
     padding-left: 3em;
 
@@ -92,7 +99,7 @@ body {
     justify-content: space-between;
     font-family: var(--font-titulos);
     margin-top: 8em;
-    margin-bottom: 5em;
+    padding-bottom: 5em;
     margin-left: 3em;
     margin-right: 3em;
 }
@@ -125,12 +132,13 @@ body {
 /*INICIO ESTILOS CAJAS*/
 
 .contenedor-cajas {
+    padding-top: 5em;
     background: var(--color-claro);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
+    
+ 
 }
 
 .caja {
@@ -140,7 +148,7 @@ body {
     width: 85%;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: .5em;
     margin-bottom: 1.125em;
     box-shadow: var(--box-sh-1);
 
@@ -203,6 +211,12 @@ body {
 
 }
 
+.izquierda{
+
+    flex-flow: row-reverse !important;
+
+}
+
 .texto-caja {
 
     margin: 2.5em;
@@ -235,6 +249,55 @@ body {
     width: 50%;
     padding: 1em;
 }
+
+.comunidad {
+    width: 40%;
+    height: 400px;
+    font-size: var(--fs-h2);
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding-top: 35px;
+    text-align: center;
+    background:var(--color-claro);
+    border-radius: 20px;
+    box-shadow: var(--box-sh-1);
+    border: none;
+    position: absolute;
+    font-family: var(--font-titulos);
+    z-index: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #00252E;
+    height: 500px;
+    margin-top: 20%;
+}
+.contenedor-links-footer a{
+    text-decoration: none;
+    
+    color: var(--color-claro);
+    font-family: var(--font-titulos);
+}
+.contenedor-links-footer li{
+    list-style: none;
+}
+
+.contenedor-logo-footer img{
+    padding-top: 8em;
+    padding-left: 3em;
+}
+.contenedor-links-footer{
+    padding-top: 3em;
+    padding-left: 3em;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3em;
+
+}
+
 
 
 
@@ -310,26 +373,26 @@ body {
 
     .caja {
         flex-flow: row wrap-reverse;
-        
-    
+
+
     }
 
     .caja img {
 
-      
+
         width: 90%;
-        margin:2em;
+        margin: 2em;
     }
 
     .texto-caja {
 
         margin-top: 0.5em;
-       text-align: center;
+        text-align: center;
         width: 90%;
         line-height: 20px;
     }
-    
-    
+
+
 
 
 }
