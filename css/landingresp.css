@@ -136,25 +136,23 @@ body {
 .caja {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 85%;
-    vertical-align: center;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 5em;
     margin-bottom: 1.125em;
     box-shadow: var(--box-sh-1);
-    outline: 1px solid red;
 
 }
 
 .texto-cajas {
     outline: 1px solid red;
-
-    margin: 2.5em;
-    margin-top: 4em;
-    padding: 2em;
-    width: 90%;
+    padding-top: 5.5em;
+    width: 40%;
     line-height: 20px;
+    margin-left: 4em;
+    margin-right:
 }
 
 .texto-cajas h2 {
@@ -174,14 +172,69 @@ body {
 
 }
 
-
+.caja-img {
+    width: 30%;
+    margin: 1em;
+    margin-left: 6em;
+    outline: 1px solid red;
+}
 
 .contenedor-cajas img {
     width: 100%;
     height: auto;
+
 }
 
 
+/* estilos contenido principal*/
+
+
+.contenedor-cajas {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+.caja {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+
+.texto-caja {
+
+    margin: 2.5em;
+    margin-top: 6em;
+    padding: 2em;
+    width: 60%;
+    line-height: 20px;
+}
+
+.texto-caja h2 {
+
+    font-size: var(--fs-h2);
+    font-family: var(--font-texto);
+    color: var(--color-oscuro);
+    padding-bottom: 1em;
+}
+
+.texto-caja p {
+    font-size: var(--fz-p);
+    font-family: var(--font-titulos);
+    color: var(--color-medio);
+    line-height: 20px;
+
+
+}
+
+.caja img {
+
+    align-self: center;
+    width: 50%;
+    padding: 1em;
+}
 
 
 
@@ -192,8 +245,8 @@ body {
     :root {
 
         --fs-h1: 1.125rem;
-        --fs-h2: 1.125rem;
-        --fz-p: .9rem;
+        --fs-h2: 1rem;
+        --fz-p: .6rem;
 
     }
 
@@ -255,39 +308,28 @@ body {
 
     }
 
-
-
     .caja {
-
         flex-flow: row wrap-reverse;
-        border-radius: 30px;
-        width: 80%;
+        
+    
     }
 
-    .texto-cajas {
-        padding-top: 1em;
-        text-align: center;
-        width: 80%;
-        padding: 0;
-        margin: 1em;
-        margin-left: 3em;
-        padding: 2em;
+    .caja img {
+
+      
+        width: 90%;
+        margin:2em;
+    }
+
+    .texto-caja {
+
+        margin-top: 0.5em;
+       text-align: center;
+        width: 90%;
         line-height: 20px;
-
-
     }
+    
+    
 
 
-    .contenedor-cajas img {
-        width: 80%;
-        max-width: 400px;
-        height: auto;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-        margin-top: 1em;
-
-
-
-
-    }
 }
