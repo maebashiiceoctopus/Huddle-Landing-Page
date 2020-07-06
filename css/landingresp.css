@@ -36,7 +36,7 @@ html {
 }
 
 body {
-   background-color: var(--color-claro);
+    background-color: var(--color-claro);
 
     height: 100%;
     width: 100%;
@@ -76,17 +76,18 @@ body {
 /* FIN ESTILOS GENERALES*/
 
 /* INICIO ESTILOS MOCKUP*/
-.contenedor{
+.contenedor {
     background-image: url('../img/bg-hero-desktop.svg');
     background-color: var(--color-fondo);
 }
+
 .contenedor-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 3em;
-   
+
     padding-right: 3em;
     padding-left: 3em;
 
@@ -137,8 +138,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
- 
+
+
 }
 
 .caja {
@@ -211,7 +212,7 @@ body {
 
 }
 
-.izquierda{
+.izquierda {
 
     flex-flow: row-reverse !important;
 
@@ -255,40 +256,46 @@ body {
     height: 400px;
     font-size: var(--fs-h2);
     height: 200px;
-    margin-left: 30%;
-    margin-top: 10%;
-    padding-top: 35px;
     text-align: center;
-    background:var(--color-claro);
+    position: absolute;
+    transform: translate(75%, 50%);
+    background: var(--color-claro);
     border-radius: 20px;
     box-shadow: var(--box-sh-1);
     border: none;
-    position: absolute;
     font-family: var(--font-titulos);
-    z-index: 0;
+    z-index: 1;
+}
+
+.comunidad h2 {
+    padding: 1.5em;
+    font-size:var(--fs-h2);
 }
 
 footer {
     width: 100%;
     background-color: #00252E;
-   
-    margin-top: 20%;
+
+    margin-top: 10em;
 }
-.contenedor-links-footer a{
+
+.contenedor-links-footer a {
     text-decoration: none;
-    
+
     color: var(--color-claro);
     font-family: var(--font-titulos);
 }
-.contenedor-links-footer li{
+
+.contenedor-links-footer li {
     list-style: none;
 }
 
-.contenedor-logo-footer img{
+.contenedor-logo-footer img {
     padding-top: 8em;
     padding-left: 3em;
 }
-.contenedor-links-footer{
+
+.contenedor-links-footer {
     padding-top: 3em;
     padding-left: 3em;
     line-height: 40px;
@@ -302,7 +309,7 @@ footer {
 
 /* MEDIA QUERYS RESPONSIVE*/
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     :root {
 
         --fs-h1: 1.125rem;
@@ -324,18 +331,21 @@ footer {
         margin-bottom: 4em;
 
     }
-    .contenedor{
+
+    .contenedor {
         background-image: url('../img/bg-hero-desktop.svg');
         background-color: var(--color-fondo);
     }
-    
+
     .contenedor-logo {
 
-
-       
         padding-right: 1.5em;
         padding-left: 1.5em;
+    }
 
+    .contenedor-logo img {
+        padding-top: .5em;
+        width: 80%;
     }
 
     .mockup {
@@ -355,8 +365,6 @@ footer {
 
     .mockup .texto-mockup h1 {
         padding-top: 1em;
-
-
     }
 
     .mockup p {
@@ -364,67 +372,66 @@ footer {
         padding-right: 1em;
         padding-left: 1em;
         color: var(--color-oscuro);
-
     }
 
     .mockup img {
         width: 90%;
         height: auto;
-
     }
 
     .caja {
         flex-flow: row wrap-reverse;
-
-
     }
 
     .caja img {
-
-
         width: 90%;
         margin: 2em;
     }
 
     .texto-caja {
-
         margin-top: 0.5em;
         text-align: center;
         width: 90%;
         line-height: 20px;
     }
 
+    .comunidad {
+       
+        width: calc(86% + 1.125em);
+        font-size: var(--fs-h2);
+        transform: translate(1.5em, 3em);
+    }
+   
     
-.comunidad {
-    width:100%;
-
-  
+.footer{
+    margin-top: 10em;
 }
 
+    .contenedor-links-footer a {
+        text-decoration: none;
 
-.contenedor-links-footer a{
-    text-decoration: none;
-    
-    color: var(--color-claro);
-    font-family: var(--font-titulos);
-}
-.contenedor-links-footer li{
-    list-style: none;
-}
+        color: var(--color-claro);
+        font-family: var(--font-titulos);
+    }
 
-.contenedor-logo-footer img{
-    padding-top: 8em;
-    padding-left: 3em;
-}
-.contenedor-links-footer{
-    padding-top: 3em;
-    padding-left: 3em;
-    line-height: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 3em;
+    .contenedor-links-footer li {
+        list-style: none;
+    }
 
-}
+    .contenedor-logo-footer img {
+        padding-top: 8em;
+        padding-left: 3em;
+    }
+
+    .contenedor-links-footer {
+        padding-top: 3em;
+        padding-left: 3em;
+        line-height: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 3em;
+
+    }
 
 
 
