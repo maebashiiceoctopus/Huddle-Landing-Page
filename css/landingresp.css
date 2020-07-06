@@ -71,8 +71,16 @@ body {
 
 
 }
+.botongris:hover,
+.boton-rosa:hover{
+    background-image: linear-gradient(to right, #cc22ee 0%, #f11483 51%, #cc22ee 100%);
+    box-shadow: 0px 0px 4px #f11483;
+    transition: 1s;
+   
+}
 
 
+   
 /* FIN ESTILOS GENERALES*/
 
 /* INICIO ESTILOS MOCKUP*/
@@ -279,9 +287,11 @@ footer {
     margin-top: 10em;
 }
 
-.contenedor-links-footer a {
-    text-decoration: none;
 
+.contenedor-links-footer i {
+    color: var(--color-claro);
+}
+.contenedor-links-footer p {
     color: var(--color-claro);
     font-family: var(--font-titulos);
 }
@@ -296,17 +306,57 @@ footer {
 }
 
 .contenedor-links-footer {
-    padding-top: 3em;
+    padding-top: 2em;
     padding-left: 3em;
     line-height: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    grid-column-gap: 1.125em;
 
+}
+.contenedor-links-footer a {
+    text-decoration: none;
+    color: var(--color-claro);
+    font-family: var(--font-titulos);
+}
+
+.datos3{
+    display: flex;   
+    justify-content: space-evenly;
+    font-size: var(--fs-h1);
 }
 
 
+.copy{
+    margin-top:2.5em;
+    display: flex;
+    justify-content: right;
+    font-family: var(--font-texto);
+    margin-right: 2em;
+    font-size: 10px;
+    color: var(--color-claro);
+}
 
+.des-por{
+    margin-top:2.5em;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-texto);
+
+    font-size: 10px;
+    color: var(--color-claro);
+    padding-bottom: 3em;
+    
+}
+.des-por a{
+    text-decoration: none;
+    color:rgb(226, 59, 226);
+}
+
+
+  
+  
 /* MEDIA QUERYS RESPONSIVE*/
 
 @media screen and (max-width:800px) {
@@ -419,13 +469,13 @@ footer {
     }
 
     .contenedor-logo-footer img {
-        padding-top: 8em;
-        padding-left: 3em;
+        padding-top: 14em;
+        padding-left: 1em;
     }
 
     .contenedor-links-footer {
         padding-top: 3em;
-        padding-left: 3em;
+        padding-left: 1em;
         line-height: 40px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,6 +483,11 @@ footer {
 
     }
 
+    .copy{
+        
+        justify-content: center;
+      
+    }
 
 
 
