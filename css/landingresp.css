@@ -430,7 +430,7 @@ footer {
     }
 
     .caja {
-        flex-flow: row wrap-reverse;
+        flex-flow: row wrap-reverse !important;
     }
 
     .caja img {
